@@ -1,0 +1,78 @@
+<!--
+    Made By Kevin Wang
+    ID 991681013
+    June 2022
+    Web programming 2
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TWO DICE PIG GAME</title>
+    <link rel="stylesheet" href="css\twodice.css"/>
+    <script type="text/javascript" src="javascript\twodice.js"></script>
+</head>
+<body onload="startGame()">
+    
+    <div>
+        <h2 id="title">TWO DICE PIG</h2>
+        <table>
+            <tr>
+                <th>
+                    Player 1
+                </th>
+                <th>
+                    Player 2
+                </th>
+            </tr>
+            
+            <td>
+                <h3 id="p1score">0</h3>
+            </td>
+            <td>
+                <h3 id="p2score">0</h3>
+            </td>
+        </table>      
+
+        <img src="images/1.jpg" id="dice1"/>
+        <img src="images/1.jpg" id="dice2"/>
+
+        <br>
+        
+        
+        <h3 id="whoRolls">Player 1's turn</h3>
+        <button onclick="rollDice()" id="roll">Roll Dice</button>
+        <button onclick="stopTurn()" id="stop">Stop Turn</button>        
+        
+        <h2 id="turnScoreLabel">This turn's score:</h2>
+        <h2 id="turnScore">0</h2>
+
+        
+        <button onclick="showRules()">RULES</button>
+        <button onclick="startGame()" id="newGame">RESET</button>
+    </div>
+    <div id="rules">
+        <h2>Rules of the game are:</h2>
+        <p>
+            1. Two dice are rolled. If neither is a one, their sum is added to the turn total.
+            <br>
+            <br>
+            2. If a single 1 is rolled, the active player scores nothing and ends this turn.
+            <br>
+            <br>
+            3. If two 1s are rolled, then the player loses all his score and ends this turn.
+            <br>
+            <br>
+            4. If the player ends his turn willingly, the turn total is added to his score.
+            <br>
+            <br>
+            5. First player to end a turn with 100 or more points wins.
+            <br>
+            <br>
+            <button onclick="hideRules()">CLOSE</button>
+        </p>
+
+    </div>
+</body>
+</html>

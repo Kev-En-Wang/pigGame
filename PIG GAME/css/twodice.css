@@ -1,0 +1,73 @@
+/*
+    Made By Kevin Wang
+    ID 991681013
+    June 2022
+    Web programming 2
+*/
+
+div
+{
+    width:500px;
+    height: 900px;
+    margin:50px auto;
+    text-align:center;
+    padding:20px;
+    background:lightBlue;
+    border:5px solid blue;
+    border-radius:50px;
+}
+
+img
+{
+    height:200px;
+    width:200px;
+    border:2px solid red;
+    border-radius:30px;
+    margin:20px;
+}
+button
+{
+    height:30px;
+    font-size:20px;
+    cursor:pointer;
+    margin:auto;
+    border-radius:10px;
+}
+table{
+    width:500px;
+    font-size: 40px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+
+th{
+    font-size: 30px;
+}
+
+#turnScoreLabel{
+    font-size: 30px;
+}
+
+#turnScore{
+    font-size: 30px;
+}
+
+#whoRolls{
+    font-size: 40px;
+}
+
+#title{
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(201, 32, 68);
+}
+
+#rules{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    color:rgb(46, 0, 212);
+    margin:auto;
+    padding: 50px;
+}
